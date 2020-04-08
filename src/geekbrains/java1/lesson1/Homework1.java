@@ -4,7 +4,7 @@ public class Homework1 {
         public static void main(String[] args) {
             int q = 10;
             int w = 2;
-            int e = 13;
+            int e = 1;
             int r = 11;
             System.out.println(EVA (q, w, e, r));
             System.out.print (SARA (5, 16));
