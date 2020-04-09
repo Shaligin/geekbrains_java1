@@ -12,7 +12,7 @@ public class Homework_2 {
 
         //int lucas[] = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         //System.out.println(POLLY(lucas));
-        int diego[] = {3, 6, -18, 100};
+        int diego[] = {3, 6, -18, 7};
         //SARA(diego);
         System.out.println(SARA(diego));
 
@@ -55,7 +55,7 @@ public class Homework_2 {
 //            }
 //        }
 
-    public static String SARA(int[] diego) {
+    public static int SARA(int[] diego) {
         {
             int max = diego[0];
             for (int i = 0; i < diego.length; i++) {
@@ -67,4 +67,8 @@ public class Homework_2 {
             //System.out.println("максимальное число в массиве" + " " + max);
         }
     }
+//    public static void KIRA (){
+//        int[] larry
+//    }
+
 }
