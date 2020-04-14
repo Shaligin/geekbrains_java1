@@ -75,7 +75,7 @@ import static javafx.scene.input.KeyCode.Y;
 //        field[y][x] = AI_DOT;
 //    }
 
-    // check win
+    // check win//
     //проверять работоспособность время жмет. поэтому пытаюсь просто понять механизм.
     //цикл который будет вызывать метод проверки горизонтали вертикали на 3 хумандот
     for(int i = 0;i<fieldSizeX;i++)
