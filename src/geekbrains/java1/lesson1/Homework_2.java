@@ -72,7 +72,7 @@ public class Homework_2 {
             for (int j = 0; j < larry.length; j++) {
                 {
                     larry[i][j] = (j == i) ? 1 : 0;
-                    System.out.print(larry[i][j] + "\t");
+                    System.out.print(larry[i][j]);
                 }
 
             }
