@@ -6,7 +6,7 @@ import java.util.Scanner;
 import static javafx.scene.input.KeyCode.Y;
 
 
-public class TicTacToe {
+    public class TicTacToe {
 
     private static final Scanner SCANNER = new Scanner(System.in);
     private static final Random RANDOM = new Random();
