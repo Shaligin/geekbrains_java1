@@ -134,61 +134,61 @@ import static javafx.scene.input.KeyCode.Y;
 //        return false;
 //}
 
-    // check draw
-    private static boolean isMapFull() {
-        for (int y = 0; y < fieldSizeY; y++) {
-            for (int x = 0; x < fieldSizeX; x++) {
-                if (isEmptyCell(y, x))
-                    return false;
-            }
-        }
-        return true;
-    }
-
-    public static void main(String[] args) {
-        while (true) {
-            initMap();
-            printMap();
-            while (true) {
-                humanTurn();
-                printMap();
-                if (gameChecks(HUMAN_DOT, "Human win!")) break;
-                aiTurn();
-                printMap();
-                if (gameChecks(AI_DOT, "AI win!")) break;
-            }
-            System.out.println("Play again?");
-            if (!SCANNER.next().equals("Y"))
-                break;
-        }
-        SCANNER.close();
-
-        int[] arr = {1, 2, 3, 4, 5, 6, 7};
-        arraySum("Hello", 0, arr);
-        arraySum("Hello", 0, new int[]{1, 2, 3, 4, 5, 6, 7});
-        arraySum("Hello", 0, 1, 2, 3, 4, 5, 6, 7);
-    }
-
-    private static int arraySum(String s, int b, int... a) {
-        int r = 0;
-        for (int i = 0; i < a.length; i++) {
-            r += a[i];
-        }
-        return r;
-    }
-
-    private static boolean gameChecks(char aiDot, String s) {
-        if (checkWin(aiDot)) {
-            System.out.println(s);
-            return true;
-        }
-        if (isMapFull()) {
-            System.out.println("draw!");
-            return true;
-        }
-        return false;
-    }
-}
-
+//    // check draw
+//    private static boolean isMapFull() {
+//        for (int y = 0; y < fieldSizeY; y++) {
+//            for (int x = 0; x < fieldSizeX; x++) {
+//                if (isEmptyCell(y, x))
+//                    return false;
+//            }
+//        }
+//        return true;
+//    }
+//
+//    public static void main(String[] args) {
+//        while (true) {
+//            initMap();
+//            printMap();
+//            while (true) {
+//                humanTurn();
+//                printMap();
+//                if (gameChecks(HUMAN_DOT, "Human win!")) break;
+//                aiTurn();
+//                printMap();
+//                if (gameChecks(AI_DOT, "AI win!")) break;
+//            }
+//            System.out.println("Play again?");
+//            if (!SCANNER.next().equals("Y"))
+//                break;
+//        }
+//        SCANNER.close();
+//
+//        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+//        arraySum("Hello", 0, arr);
+//        arraySum("Hello", 0, new int[]{1, 2, 3, 4, 5, 6, 7});
+//        arraySum("Hello", 0, 1, 2, 3, 4, 5, 6, 7);
+//    }
+//
+//    private static int arraySum(String s, int b, int... a) {
+//        int r = 0;
+//        for (int i = 0; i < a.length; i++) {
+//            r += a[i];
+//        }
+//        return r;
+//    }
+//
+//    private static boolean gameChecks(char aiDot, String s) {
+//        if (checkWin(aiDot)) {
+//            System.out.println(s);
+//            return true;
+//        }
+//        if (isMapFull()) {
+//            System.out.println("draw!");
+//            return true;
+//        }
+//        return false;
+//    }
+//}
+//
 
 
