@@ -88,7 +88,7 @@ import static javafx.scene.input.KeyCode.Y;
     }
 
     private static boolean checkWinHor(char c) {
-        // hor
+        // hor//
         for (int i = 0; i < fieldSizeX; i++) {
             if (!(field[0][i] == HUMAN_DOT))
                 return false;
